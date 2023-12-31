@@ -93,31 +93,6 @@ envisions BeProductive as more than an app; it's a catalyst for transformation, 
 
 
 
-## Details about BeProductive's Source Code:
-
-### Tech Stack:
-
-This is a web application that I created using HTML, CSS, JavaScript, Python, flask and SQL.
-
-### Description of Each Folder and File:
-
-#### Project:
-This is the main folder that contains sub-folders and other files
-
-#### Static:
-This folder contains static content like `styles.css` `index.js` and `images` etc
-
-#### Templates:
-This is the folder that contains all the templates of the project including `layout.html`
-
-#### app.py:
-This is the main file for server-side scripting. It contains all the server side logic.
-
-#### BeProductive.db:
-BeProductive.db is the database of this web application.
-
-
-
 ```
 That was BeProductive :)
 ```
