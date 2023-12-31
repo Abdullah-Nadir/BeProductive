@@ -1,0 +1,421 @@
+/* Importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Apply color scheme for body */
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+/* Centering Container */
+.centering-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+
+/* Navbar */
+
+/* Background */
+.navbar {
+    background-color: #393E46;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Collapsing div */
+div.collapse.navbar-collapse {
+    padding-left: 5px;
+    padding-bottom: 7px;
+}
+
+/* Brand */
+nav .navbar-brand {
+    color: #00ADB5;
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+nav .navbar-brand:hover {
+    color: #EEEEEE;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    color: #EEEEEE;
+}
+
+/* Links hover or active color */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #00ADB5;
+}
+
+/* Toggler button */
+.navbar-toggler {
+    border-color: #EEEEEE;
+}
+
+
+/* Register and Login template */
+
+.registration-form {
+    margin: auto;
+    background-color: #393E46;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.registration-form h2 {
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form textarea {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.registration-form input[type="text"]:focus,
+.registration-form input[type="password"]:focus,
+.registration-form textarea:focus {
+    outline: 3px solid #00ADB5;
+}
+
+.registration-form-button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form-button:hover {
+    background-color: #222831;
+}
+
+.registration-form-paragraph {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.registration-form-paragraph a {
+    color: #00ADB5;
+    text-decoration: none;
+}
+
+
+/* Help Page Template */
+
+.help-page-header {
+    margin-top: 50px;
+    background-color: #393E46;
+    text-align: center;
+    padding: 20px;
+}
+
+.help-page-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.help-page-container {
+    margin: 80px auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+.help-page-section {
+    margin-bottom: 60px;
+}
+
+.help-page-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.help-page-h2 {
+    color: #00ADB5;
+    margin-bottom: 20px;
+}
+
+
+/* Start Page Template */
+
+.start-container {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.start-container h2 {
+    font-weight: 700;
+}
+
+.start-form-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222831;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-form-button:hover {
+    background-color: #00ADB5;
+}
+
+#taskList div {
+    text-align: left;
+    width: 80%;
+    background-color: #222831;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Home Page Template */
+
+.start-container h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #00ADB5;
+}
+
+.start-container p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-task-section {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.task-section-top-border {
+    border-top: 1px solid #EEEEEE;
+    width: 30%;
+    margin: 30px auto 5px auto;
+}
+
+.task-section-bottom-border {
+    border-bottom: 1px solid #EEEEEE;
+    width: 30%;
+    margin: 30px auto 30px auto;
+}
+
+.home-tasks-heading {
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.task-checkbox {
+    margin-left: auto;
+}
+
+
+/* Report Page Template */
+
+.report {
+    margin: 80px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.report-heading {
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #00ADB5;
+}
+
+.report-container {
+    margin-bottom: 80px;
+    background-color: #EEEEEE;
+    color: #222831;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
+}
+
+.starting-timestamp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 5px;
+}
+
+.starting-time,
+.starting-day {
+    color: #777777;
+    font-size: x-small;
+}
+
+.starting-note-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.starting-note-heading {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #393E46;
+}
+
+.starting-note-container .starting-note {
+    color: #777777;
+}
+
+.tasks-container {
+    margin-bottom: 40px;
+}
+
+.tasks-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #393E46;
+}
+
+.task-list {
+    color: #EEEEEE;
+    margin: auto;
+    width: 95%;
+}
+
+.task-report {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #222831;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.report-task-checkbox {
+    margin-left: auto;
+}
+
+.ending-note-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ending-note-heading {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #393E46;
+}
+
+.ending-note-container .ending-note {
+    color: #777777;
+}
+
+.ending-timestamp {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #999999;
+    padding-top: 5px;
+}
+
+.ending-time,
+.ending-day {
+    color: #777777;
+    font-size: x-small;
+}
+
+.report-button-container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.report-button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.report-button a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+
+/* History Page Template */
+
+
+/* Apology Page Template */
+
+.apology-container {
+    margin: 100px auto;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.apology-container .apology-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+footer span {
+    color: #00ADB5;
+}
+
+

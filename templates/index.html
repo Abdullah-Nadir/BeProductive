@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="start-container">
+        <form class="registration-form" action="/" method="post">
+            <h2>Current Day Progress</h2>
+            <div class="form-group">
+                <h3>Starting Note</h3>
+                <p>{{ starting_note }}</p>
+            </div>
+            <div class="task-section-top-border"></div>
+            <div class="home-task-section">
+                <div class="form-group">
+                    <h3 class="home-tasks-heading">Tasks for the Day</h3>
+                    <div id="taskList">
+                        <!-- Tasks will be dynamically added here -->
+                        {% for task in tasks %}
+                            <div class="task">
+                                <span class="task-text">{{ task["task"] }}</span>
+                                <input class="task-checkbox" type="checkbox" data-task-id="{{ task['id'] }}" {% if task['status'] %} checked {% endif %}>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="home-task" spellcheck="false" type="text" id="task" placeholder="Add a new task">
+                    <button class="start-form-button" onclick="addHomeTask()" type="button">Add</button>
+                </div>
+            </div>
+            <div class="task-section-bottom-border"></div>
+            <div class="form-group">
+                <h3>Ending Note</h3>
+                <p>Write your Ending Note when your day wraps up</p>
+            </div>
+            <div class="form-group">
+                <textarea autocomplete="off" spellcheck="false" id="endingNote" name="endingNote" placeholder="Ending Note" required rows="3" cols="40"></textarea>
+                <button class="registration-form-button" type="submit">Done</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+

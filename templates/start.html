@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Start
+{% endblock %}
+
+{% block main %}
+    <div class="start-container">
+        <form class="registration-form" action="/start" method="post">
+            <h2>Start Your Day</h2>
+            <div class="form-group">
+                <textarea autofocus autocomplete="off" spellcheck="false" id="startingNote" name="startingNote" placeholder="Starting Note" required rows="3" cols="40"></textarea>
+            </div>
+            <div id="taskList">
+                <!-- Tasks will be dynamically added here -->
+                {% for task in session["tasks"] %}
+                    <div>
+                        {{ task }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                <input class="start-task" spellcheck="false" type="text" id="task" placeholder="Task">
+                <button class="start-form-button" onclick="addStartTask()" type="button">Add</button>
+            </div>
+            <button class="registration-form-button" type="submit">Start</button>
+        </form>
+    </div>
+{% endblock %}

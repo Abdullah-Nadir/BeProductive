@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Report
+{% endblock %}
+
+{% block main %}
+    <div class="report">
+        <h1 class="report-heading">Report</h1>
+        <div class="report-container">
+            <div class="starting-timestamp">
+                <span class="starting-time ">{{ day["startingTime"] }}</span>
+                <span class="starting-day">{{ day["startingDay"] }}</span>
+            </div>
+            <div class="starting-note-container">
+                <h2 class="starting-note-heading">Starting Note</h2>
+                <p class="starting-note">{{ day["startingNote"] }}</p>
+            </div>
+            <div class="tasks-container">
+                <h2 class="tasks-heading">Tasks Status</h2>
+                <div class="task-list">
+                    {% for task in tasks %}
+                        <div class="task-report">
+                            <span class="task-text">{{ task["task"] }}</span>
+                            <input class="report-task-checkbox" type="checkbox" {% if task['status'] %} checked {% endif %} disabled>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="ending-note-container">
+                <h2 class="ending-note-heading">Ending Note</h2>
+                <p class="ending-note">{{ day["endingNote"] }}</p>
+            </div>
+            <div class="ending-timestamp">
+                <span class="ending-time ">{{ day["endingTime"] }}</span>
+                <span class="ending-day">{{ day["endingDay"] }}</span>
+            </div>
+        </div>
+        <div class="report-button-container">
+            <button class="report-button" type="button"><a href="/start">Start</a></button>
+        </div>
+    </div>
+{% endblock %}
+
